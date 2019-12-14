@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+}
+
+.MainContainer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainDiv {
+    background-color: white;
+    height: 75vh;
+    width: 75vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a :hover {
+    cursor: pointer;
+}

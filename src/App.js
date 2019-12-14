@@ -13,9 +13,19 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h1>Hi mom!</h1>
-            </div>
+            <>
+            <header>
+                <h1>Savvy Hotspots</h1>
+            </header>
+            <nav>
+                <a href='#'>Home</a>
+                <a href='#'>Historic</a>
+                <a href='#'>Tybee</a>
+                <a href='#'>Southside</a>
+                <a href='#'>Search</a>
+            </nav>
+            <Main />
+            </>
         )
     }
 }
