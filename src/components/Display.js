@@ -1,6 +1,6 @@
 import React from 'react';
 import './Display.css';
-import Comments from './Comments';
+import Restaurant from './Restaurant';
 
 //////////////////////////////
 // DISPLAY
@@ -16,7 +16,7 @@ class Display extends React.Component {
         super(props)
         this.state = {
 
-            restaurants: []
+            restaurants: [],
 
         }
         //counter variable for pagination
@@ -64,16 +64,8 @@ class Display extends React.Component {
         return (
             <div>
                 {this.state.restaurants.map((rest,index) => (
-                    <div key={rest.id} className="rest">
-                    <h3>{rest.name}</h3>
-                    <img src={rest.image_url} alt={rest.name}/>
-                    <p>{rest.address}</p>
-                    <p>{rest.city} - {rest.state} - {rest.postal_code}</p>
-                    <p>{rest.phone}</p>
-                    <Comments restid={rest.id}/>
-                    </div>
+                    <Restaurant rest={rest} key={rest.id}/>
                 ))}
-
             </div>
         )
     }
