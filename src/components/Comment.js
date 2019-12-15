@@ -23,13 +23,14 @@ const Comment = (props) => {
 
     //this function handles form submission
     const handleSubmit = async (event) => {
+        event.preventDefault();
         const createData = {
             restid: props.restid,
             author: formState.author,
             comment: formState.comment,
             password: formState.password
         }
-        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://savvyhotspotsapi.herokuapp.com/api/comments`, {
+        const response = await fetch(`https://savvyhotspotsapi.herokuapp.com/api/comments`, {
           body: JSON.stringify(createData),
           method: 'POST',
           headers: {
@@ -39,7 +40,7 @@ const Comment = (props) => {
             });
         const json = await response.json;
         console.log(json);
-        event.preventDefault();
+
     }
 //Since this is a function components, I have use the useEffect hook instead of lifecycle Functions
 //The Empty array as the second parameter ensures it only runs on mount, without it, it will repeat on update causing a loop
