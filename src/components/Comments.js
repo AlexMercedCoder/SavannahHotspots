@@ -17,7 +17,7 @@ const Comments = (props) => {
     const getComments = async () => {
             const response = await fetch(`https://cors-anywhere.herokuapp.com/https://savvyhotspotsapi.herokuapp.com/api/comments/${props.restid}`);
             const json = await response.json();
-            setComments({
+            await setComments({
                 comments: json
             });
             console.log(comments)
@@ -43,7 +43,7 @@ const Comments = (props) => {
             </div>
         ))}
 
-        <Comment/>
+        <Comment restid={props.restid} get={getComments}/>
         </div>
     )
 

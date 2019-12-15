@@ -30,7 +30,7 @@ const Comment = (props) => {
             comment: formState.comment,
             password: formState.password
         }
-        const response = await fetch(`https://savvyhotspotsapi.herokuapp.com/api/comments`, {
+        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://savvyhotspotsapi.herokuapp.com/api/comments`, {
           body: JSON.stringify(createData),
           method: 'POST',
           headers: {
@@ -40,13 +40,12 @@ const Comment = (props) => {
             });
         const json = await response.json;
         console.log(json);
+        props.get();
 
     }
-//Since this is a function components, I have use the useEffect hook instead of lifecycle Functions
-//The Empty array as the second parameter ensures it only runs on mount, without it, it will repeat on update causing a loop
 
 
-//Below we render all comments and then below that a form to add comments
+//below a form to add comments
 
     return (
         <div className="form">
