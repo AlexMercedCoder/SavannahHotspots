@@ -45,13 +45,16 @@ class App extends React.Component {
                     <Main/>
                 </Route>
                 <Route path="/historic">
-                    <Display zip="31401"/>
+                    <h1>Historic Savannah</h1>
+                    <Display key="name" zip="31401"/>
                 </Route>
                 <Route path="/tybee">
-                    <Display zip="31328"/>
+                    <h1>Tybee Island</h1>
+                    <Display key="name2" zip="11230"/>
                 </Route>
                 <Route path="/southside">
-                    <Display zip=""/>
+                    <h1>Southside Savannah</h1>
+                    <Display key="name4" zip="10005"/>
                 </Route>
                 <Route path="/search">
                     <Search/>
