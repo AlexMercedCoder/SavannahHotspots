@@ -50,12 +50,9 @@ const Comment = (props) => {
     return (
         <div className="form">
             <form onSubmit={handleSubmit}>
-                <label htmlFor="author">Name</label>
-                <input maxLength="30" type="text" name="author" onChange={handleChange}/>
-                <label htmlFor="comment">Comment</label>
-                <input maxLength="140" type="text" name="comment" onChange={handleChange}/>
-                <label htmlFor="password">Comment Password</label>
-                <input maxLength="8" type="text" name="password" onChange={handleChange}/>
+                <input maxLength="30" type="text" name="author" placeholder="name" onChange={handleChange}/>
+                <input maxLength="140" type="text" name="comment" placeholder="comment" onChange={handleChange}/>
+                <input maxLength="8" type="text" name="password" placeholder="password" onChange={handleChange}/>
                 <input type="submit" value="submit"/>
             </form>
         </div>

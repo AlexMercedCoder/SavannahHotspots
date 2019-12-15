@@ -38,8 +38,8 @@ const Comments = (props) => {
         {comments.comments.map((comment,index)=>(
             <div className="commentcont" key={comment.id}>
             <p className="author">{comment.author}</p>
-            <p className="date">{comment.date}</p>
             <p className="comment">{comment.comment}</p>
+            <p className="date">{comment.date}</p>
             </div>
         ))}
 
