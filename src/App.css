@@ -40,3 +40,5 @@ nav a:hover,nav Link:hover {
     cursor: pointer;
     background-color: black;
 }
+
+h1 {text-align: center;}
