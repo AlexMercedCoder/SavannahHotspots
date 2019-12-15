@@ -62,7 +62,7 @@ class Display extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="display">
                 {this.state.restaurants.map((rest,index) => (
                     <Restaurant rest={rest} key={rest.id}/>
                 ))}

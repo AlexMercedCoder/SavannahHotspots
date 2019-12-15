@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Girassol|Kulim+Park&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Kulim Park', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Girassol', cursive;}
+
+button {border-radius: 10px; background-color: black; color: white; transition: background-color .4s, color .4s;
+border: none; padding: 10px;}
+
+button:hover {background-color: lightgray; color: black;}
+
+input {padding: 5px; border: none; border-radius: 4px; background-color: black; color: white; margin: 5px;}
