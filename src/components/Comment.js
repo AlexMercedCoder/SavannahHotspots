@@ -39,7 +39,7 @@ const Comment = (props) => {
                 }
             });
         const json = await response.json;
-        console.log(json);
+        await console.log(json);
         props.get();
 
     }
