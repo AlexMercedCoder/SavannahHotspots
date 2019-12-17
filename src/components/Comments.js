@@ -21,6 +21,29 @@ const Comments = (props) => {
                 comments: json
             });
             console.log(comments)
+
+    }
+
+    const deleteComment = async (id, index) => {
+        const password = prompt('What is your comments password?')
+        if (password === comments.comments[index].password){
+            const response = await fetch(`https://cors-anywhere.herokuapp.com/https://savvyhotspotsapi.herokuapp.com/api/comments/${id}`, {
+              body: "",
+              method: 'DELETE',
+              headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+                    }
+                });
+            const json = await response.json();
+            const [...newComments] = comments.comments;
+            newComments.splice(index,1);
+            setComments({comments:newComments});
+            return json;
+        }else {
+            alert('wrong password')
+        }
+
     }
 
 //Since this is a function components, I have use the useEffect hook instead of lifecycle Functions
@@ -40,6 +63,7 @@ const Comments = (props) => {
             <p className="author">{comment.author}</p>
             <p className="comment">{comment.comment}</p>
             <p className="date">{comment.date}</p>
+            <p className="delete" onClick={()=>{deleteComment(comment.id, index)}}> X </p>
             </div>
         ))}
 

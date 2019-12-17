@@ -1,2 +1,6 @@
 .commentcont {display: flex; justify-content: space-around; background-color: black; color: white;
             font-size: 70%; margin: 6px; padding: 5px;}
+
+.delete {background: white; color: black; padding: 3px; border-radius: 4px;}
+
+.delete:hover {cursor: pointer; color: red; font-weight1: 900;}
