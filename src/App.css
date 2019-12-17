@@ -1,19 +1,36 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 header {
     text-align: center;
+    background-color: #15944a;
+    width: 40vw;
+    margin: 0 auto;
+    padding: .5em 0;
+    border-radius: 10px;
+    border: 5px solid #095327;
+}
+
+.Title {
+    color: white;
+    text-shadow: 6px 6px 6px black;
+    font-size: 4.5em;
 }
 
 nav {
-    background-color: red;
+    background-color: #15944a;
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    height: 4.5em;
     align-items: center;
+    border-top: 5px solid #095327;
+    border-bottom: 5px solid #095327;
+    margin-top: 1em;
 }
+
 
 .MainContainer {
     background-color: black;
@@ -24,21 +41,61 @@ nav {
 
 .MainDiv {
     background-color: white;
-    height: 75vh;
-    width: 75vw;
+    width: 85vw;
+}
+
+.HeroImg {
+    text-align: left;
+    background-image: url("https://cdn.thecrazytourist.com/wp-content/uploads/2018/05/ccimage-shutterstock_731077678.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    width: 85vw;
+    background-repeat: no-repeat;
+    padding-top: 2em;
+}
+
+.HeroText {
+    text-align: left;
+    margin-left: 8vw;
+    color: black;
+}
+
+/* .HeroImg {
+    width: 60vw;
+    border-radius: 2em;
+
+} */
+
+.HeroSubText {
+    margin: 0 3em;
+    margin-top: 2em;
+}
+
+.HeroSubText2 {
+    margin: 1.5em 3em;
 }
 
 nav a,nav Link {
     text-decoration: none;
     color: white;
-    background-color: red;
+    background-color: #15944a;
     transition: background-color .4s;
     padding: 15px;
+    border-radius: 15px;
+    font-size: 1.25em;
 }
 
 nav a:hover,nav Link:hover {
     cursor: pointer;
     background-color: black;
+    font-size: 1.5em;
 }
 
-h1 {text-align: center;}
+h1 {
+    /* text-align: center; */
+    font-size: 4em;
+    margin: 0;
+    color: white;
+    text-align: center;
+}

@@ -1,2 +1,9 @@
-.display { display: flex; justify-content: space-around; margin: 10px auto; width: 85%;
-    flex-wrap: wrap;}
+.display {
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+    width: 85%;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 5px;
+}

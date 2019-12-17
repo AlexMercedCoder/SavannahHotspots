@@ -24,7 +24,7 @@ class App extends React.Component {
         return (
             <>
             <header>
-                <h1>Savvy Hotspots</h1>
+                <h1 className="Title">Savvy Hotspots</h1>
             </header>
 
 
@@ -62,6 +62,10 @@ class App extends React.Component {
             </Switch>
 
         </Router>
+        <footer>
+
+
+        </footer>
             </>
         )
     }

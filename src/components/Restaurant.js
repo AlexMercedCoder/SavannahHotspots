@@ -37,7 +37,7 @@ const Restaurant = (props) => {
         return (
                     <div key={props.rest.id} className="rest">
                     <h3>{props.rest.name}</h3>
-                    <img src={props.rest.image_url} alt={props.rest.name}/>
+                    <img className="restImg" src={props.rest.image_url} alt={props.rest.name}/>
                     <p>{props.rest.address}</p>
                     <p>{props.rest.city} - {props.rest.state} - {props.rest.postal_code}</p>
                     <p>{props.rest.phone}</p>

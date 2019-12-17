@@ -1,0 +1,17 @@
+.zipInput {
+    background-color: white;
+    color: black;
+    margin: 5vh 0;
+    margin-right: 10vh;
+    text-align: center;
+}
+
+.SearchText {
+    color: white;
+    text-align: center;
+    margin: 25vh 0;
+}
+
+.zipForm {
+    text-align: center;
+}
